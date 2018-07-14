@@ -1,0 +1,47 @@
+<ion-content>
+
+  <ion-segment [(ngModel)]="selTab" class="segmentBar">
+    <ion-segment-button value="music" class="segMusic">
+      <ion-icon name="musical-notes" class="tabIcon"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="gifts" class="segGifts">
+      <ion-icon name="heart" class="tabIcon"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="photos" class="segPhotos">
+      <ion-icon name="images" class="tabIcon"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="videos" class="segVideos">
+      <ion-icon name="videocam" class="tabIcon"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="selTab">
+    <div *ngSwitchCase="'music'" class="music">
+      <div class="buttons">
+        <button ion-button (click)="playMusic('Ohlamour.mp3')">1</button>
+        <button ion-button (click)="playMusic('MeCambiasteLaVida.mp3')">2</button>
+        <button ion-button (click)="playMusic('MeGusta.mp3')">3</button>
+        <button ion-button (click)="playMusic('Amorcito.mp3')">4</button>
+        <button ion-button (click)="playMusic('EstamosJuntos.mp3')">5</button>
+        <button ion-button (click)="playMusic('PorEsoTeAmo.mp3')">6</button>
+      </div>
+    </div>
+    <div *ngSwitchCase="'gifts'" class="gifts">
+
+    </div>
+    <div *ngSwitchCase="'photos'" class="photos">
+
+    </div>
+    <div *ngSwitchCase="'videos'" class="videos">
+
+    </div>
+  </div>
+
+
+  <div *ngIf="selTab == 'anim'" #arena class="arenaBG" [ngStyle]="{'zoom':zoomFactor, 'transform': 'translate(' + panX + 'px, ' + panY + 'px)'}">
+
+    <div class="cuadrado">HOLA</div>
+    <div class="circulo">CHAU</div>
+
+  </div>
+</ion-content>

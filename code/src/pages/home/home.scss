@@ -1,0 +1,79 @@
+page-home {
+   .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+      border-color:black;
+      border-width: 3px;
+      border-radius: 20px 20px 0px 0px;
+   }
+   .tabIcon {
+      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+      font-weight: bold;
+      color:white;
+      font-size: 24px;  
+   }
+
+   .music{
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(rgb(211, 121, 121) 0%, #660000 100%);
+   }
+   .gifts{
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(rgb(205, 211, 121) 0%, #665c00 100%);
+   }
+   .photos{
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(rgb(121, 185, 211) 0%, #002966 100%);
+   }
+   .videos{
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(rgb(121, 211, 140) 0%, #00660e 100%);
+   }
+
+   .segMusic{
+      box-shadow: -1px -1px 4px black;
+      border-radius: 20px 20px 0px 0px !important;
+      background: red !important;
+   }
+   .segGifts{
+      box-shadow: -1px -1px 4px black;
+      border-radius: 20px 20px 0px 0px !important;
+      background: #ccd000 !important;
+   }
+   .segPhotos{
+      box-shadow: -1px -1px 4px black;
+      border-radius: 20px 20px 0px 0px !important;
+      background: rgb(49, 129, 219) !important;
+   }
+   .segVideos{
+      box-shadow: -1px -1px 4px black;
+      border-radius: 20px 20px 0px 0px !important;
+      background: rgb(73, 175, 33) !important;
+   }
+
+
+   .button {
+      margin:10px;
+      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+      font-weight: bold;
+      color:white;
+      font-size: 24px;
+      cursor: pointer;
+      outline: none;
+
+      display: inline-block;
+      padding: 35px 30px;
+      background: radial-gradient(farthest-corner at 15px 15px, #ff0000 10%, #040003 100%);
+      border-radius: 50%;
+      box-shadow: 1px 9px 10px rgb(0, 0, 0);
+    }
+    
+    .button:active {
+      background: radial-gradient(farthest-corner at 5px 5px, #ff0000 10%, #040003 100%);
+      box-shadow: 1px 2px rgb(0, 0, 0);
+      transform: translateY(4px);
+    }
+
+}
